@@ -1,6 +1,6 @@
 {
     "name": "mmieluch/laravel-vfs-provider",
-    "description": "Laravel service provider for The League of Extraordinary Packages' wrapper around PHP-VFS library by Michael Donat.",
+    "description": "A service provider intended to use with Laravel 5.x for The League Flysystem's wrapper around PHP-VFS library.",
     "license": "MIT",
     "authors": [
         {
