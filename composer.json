@@ -1,0 +1,13 @@
+{
+    "name": "mmieluch/laravel-vfs-provider",
+    "description": "Laravel service provider for The League of Extraordinary Packages' wrapper around PHP-VFS library by Michael Donat.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michał Mieluch",
+            "email": "michal.mieluch@bluefroglondon.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
