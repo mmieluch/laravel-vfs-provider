@@ -8,6 +8,21 @@
             "email": "michal.mieluch@bluefroglondon.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Mmieluch\\LaravelVfsProvider\\": "src"
+        }
+    },
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.*",
+        "illuminate/filesystem": "5.*",
+        "league/flysystem-vfs": "^1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
 }

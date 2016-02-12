@@ -1,6 +1,9 @@
 vendor/
 node_modules/
 
+### Composer ###
+composer.lock
+
 ### OSX ###
 .DS_Store
 .AppleDouble
