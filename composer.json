@@ -2,6 +2,7 @@
     "name": "mmieluch/laravel-vfs-provider",
     "description": "A service provider intended to use with Laravel 5.x for The League Flysystem's wrapper around PHP-VFS library.",
     "license": "MIT",
+    "version": "0.1",
     "authors": [
         {
             "name": "Michał Mieluch",
