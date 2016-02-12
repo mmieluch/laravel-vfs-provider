@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Providers;
+namespace Mmieluch\LaravelVfsProvider;
 
 use Illuminate\Support\ServiceProvider;
 use League\Flysystem\Filesystem;
-use League\Flysystem\Vfs\VfsAdapter;
 use VirtualFileSystem\FileSystem as Vfs;
 
 class LaravelVfsServiceProvider extends ServiceProvider
