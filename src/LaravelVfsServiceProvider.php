@@ -11,16 +11,9 @@ class LaravelVfsServiceProvider extends ServiceProvider
 {
 
     /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = true;
-
-    /**
      * {@inheritdoc}
      */
-    public function register()
+    public function boot()
     {
         $this->app['filesystem']->extend('vfs', function() {
             $vfs = new Vfs;
@@ -29,6 +22,14 @@ class LaravelVfsServiceProvider extends ServiceProvider
 
             return $filesystem;
         });
+    }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function register()
+    {
+        //
     }
 
     /**
