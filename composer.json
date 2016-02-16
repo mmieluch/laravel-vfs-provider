@@ -1,8 +1,8 @@
 {
     "name": "mmieluch/laravel-vfs-provider",
-    "description": "A service provider intended to use with Laravel 5.x for The League Flysystem's wrapper around PHP-VFS library.",
+    "description": "A Laravel service provider for Flysystem's wrapper around PHP-VFS.",
+    "keywords": ["php", "laravel", "flysystem", "vfs", "php-vfs", "service provider"],
     "license": "MIT",
-    "version": "0.1",
     "authors": [
         {
             "name": "Michał Mieluch",
@@ -14,16 +14,15 @@
             "Mmieluch\\LaravelVfsProvider\\": "src"
         }
     },
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "5.*",
-        "illuminate/filesystem": "5.*",
+        "illuminate/support": "5.0.*|5.1.*|5.2.*",
+        "illuminate/filesystem": "5.0.*|5.1.*|5.2.*",
         "league/flysystem-vfs": "^1.0"
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1-dev"
-        }
+    "support": {
+        "issues": "https://github.com/mmieluch/laravel-vfs-provider/issues",
+        "source": "https://github.com/mmieluch/laravel-vfs-provider",
+        "docs": "https://github.com/mmieluch/laravel-vfs-provider"
     }
 }
