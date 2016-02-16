@@ -3,33 +3,40 @@
 namespace Mmieluch\LaravelVfsProvider;
 
 use Illuminate\Support\ServiceProvider;
+use League\Flysystem\Vfs\VfsAdapter;
 use League\Flysystem\Filesystem;
 use VirtualFileSystem\FileSystem as Vfs;
 
 class LaravelVfsServiceProvider extends ServiceProvider
 {
+
     /**
-     * Bootstrap the application services.
+     * Indicates if loading of the provider is deferred.
      *
-     * @return void
+     * @var bool
      */
-    public function boot()
+    protected $defer = true;
+
+    /**
+     * {@inheritdoc}
+     */
+    public function register()
     {
         $this->app['filesystem']->extend('vfs', function() {
-            $vfs = new Vfs();
+            $vfs = new Vfs;
             $adapter = new VfsAdapter($vfs);
+            $filesystem = new Filesystem($adapter);
 
-            return new Filesystem($adapter);
+            return $filesystem;
         });
     }
 
     /**
-     * Register the application services.
-     *
-     * @return void
+     * {@inheritdoc}
      */
-    public function register()
+    public function provides()
     {
-        //
+        return ['filesystem.vfs'];
     }
+
 }
