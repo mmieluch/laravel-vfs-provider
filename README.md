@@ -1,6 +1,7 @@
 # laravel-vfs-provider
 
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/mmieluch/laravel-vfs-provider)
+[![Latest Stable Version](https://poser.pugx.org/mmieluch/laravel-vfs-provider/v/stable)](https://packagist.org/packages/mmieluch/laravel-vfs-provider)
+[![Total Downloads](https://poser.pugx.org/mmieluch/laravel-vfs-provider/downloads)](https://packagist.org/packages/mmieluch/laravel-vfs-provider)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/mmieluch/laravel-vfs-provider)
 
 A service provider intended to use with Laravel 5.x for The League Flysystem's wrapper around PHP-VFS library.
