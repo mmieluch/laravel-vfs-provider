@@ -3,7 +3,7 @@
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/mmieluch/laravel-vfs-provider)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/mmieluch/laravel-vfs-provider)
 
-A service provider intended to use with Laravel 5.x for The League Flysystem's wrapper around PHP-VFS library.
+A service provider intended to use with Laravel 5.4 for The League Flysystem's wrapper around PHP-VFS library.
 
 ## Installation
 
@@ -12,6 +12,10 @@ A service provider intended to use with Laravel 5.x for The League Flysystem's w
    ```bash
    composer require mmieluch/laravel-vfs-provider
    ```
+   
+   > If you need support for Laravel 5.0 to Laravel 5.3, please use the `v0.0.3` version.
+   >
+   > `composer require "mmieluch/laravel-vfs-provider:0.0.3"`
 
 2. Register new service provider in `config/app.php`:
 
